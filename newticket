@@ -1,8 +1,16 @@
 #!/bin/bash
 
-last=$(ls tickets | sort -rn | head -1)
+lines=$(ls tickets | wc -l)
+
+if [ $lines -eq 0 ]
+then
+  last=0
+else
+  last=$(ls tickets | sort -rn | head -1)
+fi
+
 next=$(($last + 1))
-echo -e  "ticket: $next\nresponsible $(git config user.name)\nstatus: open\ntitle: ?\n----\nDescribe your problem here" | cat > tickets/$next
+echo -e  "ticket: $next\nresponsible: $(git config user.name)\nstatus: open\ntitle: ?\n----\nDescribe your problem here" | cat > tickets/$next
 git add tickets/$next
 git commit -m "New ticket $next entered"
 echo $next
