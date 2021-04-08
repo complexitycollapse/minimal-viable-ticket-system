@@ -8,11 +8,13 @@ The idea comes from <https://joearms.github.io/published/2014-06-25-minimal-viab
 
 The ticket will be created in the tickets folder, and the number of the ticket (which is also its filename) will be returned. A new ticket looks like this:
 
+```
 ticket: 1
 responsible: <your_git_name>
 status: open
 title: ?
 ----
 Describe your problem here
+```
 
 The ticket will already have been committed to the repo. You can edit it further with your favourite text editor and commit the changes. Don't forget to 'git push' to share your changes with the other users.
