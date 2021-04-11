@@ -17,4 +17,4 @@ title: ?
 Describe your problem here
 ```
 
-The ticket will already have been committed to the repo. You can edit it further with your favourite text editor and commit the changes. Don't forget to 'git push' to share your changes with the other users.
+The ticket will already have been committed to the repo and pushed upstream. You can edit it further with your favourite text editor and commit the changes.

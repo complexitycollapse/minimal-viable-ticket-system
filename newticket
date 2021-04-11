@@ -1,5 +1,6 @@
 #!/bin/bash
 
+git pull
 mkdir -p tickets
 lines=$(ls tickets | wc -l)
 
@@ -14,4 +15,5 @@ next=$(($last + 1))
 echo -e  "ticket: $next\nresponsible: $(git config user.name)\nstatus: open\ntitle: ?\n----\nDescribe your problem here" | cat > tickets/$next
 git add tickets/$next
 git commit -m "New ticket $next entered"
+git push
 echo $next
