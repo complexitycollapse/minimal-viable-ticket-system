@@ -4,7 +4,7 @@ This is an example of a Minimal Viable Program, defined as "the smallest program
 
 The idea comes from <https://joearms.github.io/published/2014-06-25-minimal-viable-program.html> which describes an actually used-in-production ticketing system that works on the same principle. To create an instance of the system, just fork this repo. To use it, open a terminal and change directory to your fork, then raise a ticket by running
 
-    ./newticket
+    ./newticket "Put the title of the ticket here"
 
 The ticket will be created in the tickets folder, and the number of the ticket (which is also its filename) will be returned. A new ticket looks like this:
 
@@ -12,7 +12,7 @@ The ticket will be created in the tickets folder, and the number of the ticket (
 ticket: 1
 responsible: <your_git_name>
 status: open
-title: ?
+title: Put the title of the ticket here
 ----
 Describe your problem here
 ```
